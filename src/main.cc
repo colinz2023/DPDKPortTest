@@ -13,7 +13,7 @@
 #include "sfrb.h"
 
 #define CMD_PROMPT "port_test > "
-#define PORT_TEST_VERSION "v0.0.2_r4"
+#define PORT_TEST_VERSION "2_r4"
 
 #define Likely(x) (__builtin_expect(!!(x), 1))
 #define Unlikely(x) (__builtin_expect(!!(x), 0))

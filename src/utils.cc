@@ -6,8 +6,10 @@ std::string FormatStr(const char* fmt, ...) {
   char temp[BUFFER_SIZE];
   va_list args;
   va_start(args, fmt);
-  int nWrite = vsnprintf(temp, BUFFER_SIZE, fmt, args);
+  vsnprintf(temp, BUFFER_SIZE, fmt, args);
 
   va_end(args);
   return std::string(temp);
 }
+
+

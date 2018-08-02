@@ -1,0 +1,12 @@
+1. 编译时在终端添加RTE_SDK环境变量
+例如:
+# export RTE_SDK=/home/develop/dpdk/x86_64-native-linuxapp-gcc
+
+2. 使用说明
+-c 参数: 使用的核心数量, 从核心1开始
+-r 使用rss
+-s 自收自发
+-b 调节mbuf池的个数
+
+例如:
+# ./port_test -- -c 8 -r -s -b 40960
